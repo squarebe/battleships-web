@@ -1,6 +1,14 @@
 <div style="border: 5px solid black">
   <% if @visitor %>
-	  Hello, <%= @visitor %>!
+	<h2> Hello, <%= @visitor %>!<h2>
+	<% else %>
+		<form action="/">
+		<h2>Hello! My name is <%= @name %>.</h2>
+		<h3>What is your name?</h3>
+		<input type="text" name="name" value="Your Name">
+		<input type="submit" value="Create">
+		</form>
 	<% end %>
+
 	<img src="http://www.bideawee.org/Media/Image/Brafton/It-s-kitten-season--Is-your-home-ready-for-the-arrival-of-your-new-pet-_16001188_800827146_0_0_14067751_500.jpg">
 </div>
